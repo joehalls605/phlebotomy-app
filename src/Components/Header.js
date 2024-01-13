@@ -5,7 +5,7 @@ const Header = () => {
     return(
         <header className="bg-gray-100 text-black p-4 flex justify-between items-center">
             <div>
-                <h1>Phleboto</h1>
+                <h1 className="text-xl font-bold">Phleboto</h1>
             </div>
             <div>
                 <nav>
