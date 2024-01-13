@@ -3,13 +3,9 @@ import '../App.css';
 
 const Footer = () => {
     return(
-        <header>
-            <div className="bg-gray-100">
-               <ul>
-                <li></li>
-               </ul>
-            </div>
-        </header>
+       <footer className="bg-gray-100 text-black p-4 flex justify-between items-center fixed bottom-0 w-full">
+        <p className="text-xs">&copy; {new Date().getFullYear()} Phleboto. All rights reserved</p>
+       </footer>
     )
 
 }
