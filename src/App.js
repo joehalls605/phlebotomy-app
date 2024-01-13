@@ -8,14 +8,19 @@ import { useState } from 'react';
 
 function App() {
 
-  const [gameStarted, setGameStarted] = useState();
+  const [gameStarted, setGameStarted] = useState(false);
 
   return (
     <div>
-      <Homepage setGameStarted={setGameStarted}/>
-    {/* <Header/>
-    <QuestionContainer/>
-    <Footer/> */}
+      {gameStarted ? (
+        <>
+          <Header />
+          <QuestionContainer />
+          <Footer />
+        </>
+      ): (
+        <Homepage setGameStarted={setGameStarted}/>
+      )}
     </div>
   );
 }
