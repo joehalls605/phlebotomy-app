@@ -5,17 +5,19 @@ import Question from './Components/QuestionContainer';
 import QuestionContainer from './Components/QuestionContainer';
 import Homepage from './Pages.js/Homepage';
 import { useState } from 'react';
+import phlebotomyQuestionsData from './Data/phlebotomyQuestions';
 
 function App() {
 
   const [gameStarted, setGameStarted] = useState(false);
+  const [category, setCategory] = useState(null);
 
   return (
     <div>
       {gameStarted ? (
         <>
           <Header />
-          <QuestionContainer />
+          <QuestionContainer setCategory={setCategory} phlebotomyQuestionsData={phlebotomyQuestionsData} />
           <Footer />
         </>
       ): (
