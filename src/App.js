@@ -17,7 +17,7 @@ function App() {
       {gameStarted ? (
         <>
           <Header />
-          <QuestionContainer setCategory={setCategory} phlebotomyQuestionsData={phlebotomyQuestionsData} />
+          <QuestionContainer selectedCategory={category}  phlebotomyQuestionsData={phlebotomyQuestionsData} />
           <Footer />
         </>
       ): (
